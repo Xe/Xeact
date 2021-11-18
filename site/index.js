@@ -29,8 +29,10 @@ const testimonials = shuf([
 
 (() => {
     let i = 0;
-    setInterval(() => {
+    const d = () => {
         i++;
         g("testimonials").innerText = testimonials[i % testimonials.length];
-    }, 250);
+    };
+    d();
+    setInterval(d, 3000);
 })();
