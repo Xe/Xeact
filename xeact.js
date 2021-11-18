@@ -19,3 +19,5 @@ const u = (url = window.location.href, data = {}) => Object.assign(new URL(url),
 const s = (selector) => Array.from(document.querySelectorAll(selector));
 
 const q = (data = {}) => new URLSearchParams(data);
+
+const r = (callback) => window.addEventListener('DOMContentLoaded', callback);
