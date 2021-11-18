@@ -14,7 +14,7 @@ const g = (name) => document.getElementById(name);
 
 const c = (name) => document.getElementsByClassName(name);
 
-const u = (url = window.location.href, data = {}) => Object.assign(new URL(url), data);
+const u = (url = "", data = {}) => Object.assign(new URL(url, window.location.href), data);
 
 const s = (selector) => Array.from(document.querySelectorAll(selector));
 
