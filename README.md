@@ -5,6 +5,8 @@ femtoframework for productive development in Javascript. It will take everything
 that is complicated about frontend web development and throw it in the trash.
 
 ```javascript
+import { g, h, x } from "./xeact.js";
+
 (async () => {
     const resp = await fetch("https://httpbin.org/headers");
     const data = await resp.json();

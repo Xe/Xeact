@@ -1,0 +1,24 @@
+{
+  "name": "xeact",
+  "version": "0.0.69",
+  "description": "Xeserv's groundbreaking JS femtoframework",
+  "main": "xeact.js",
+  "scripts": {
+    "test": "echo \"lol you think there's tests for this kind of a shitpost\"",
+    "serve": "cd site && nix-shell -p python3 --run 'python3 -m http.server'",
+    "gentypes": "nix-shell -p nodePackages.typescript --run 'tsc xeact.js --declaration --allowJs --emitDeclarationOnly --outDir types'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xe/Xeact.git"
+  },
+  "keywords": [
+    "xeserv"
+  ],
+  "author": "Xe",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/Xe/Xeact/issues"
+  },
+  "homepage": "https://github.com/Xe/Xeact#readme"
+}
