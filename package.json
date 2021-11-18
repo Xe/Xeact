@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"lol you think there's tests for this kind of a shitpost\"",
     "serve": "cd site && nix-shell -p python3 --run 'python3 -m http.server'",
-    "gentypes": "nix-shell -p nodePackages.typescript --run 'tsc xeact.js --declaration --allowJs --emitDeclarationOnly --outDir types'"
+    "gentypes": "nix-shell -p nodePackages.typescript --run 'tsc xeact.js --declaration --allowJs --emitDeclarationOnly --outDir types'",
+    "minify": "nix-shell -p nodePackages.uglify-js --run 'uglifyjs xeact.js -c -m > xeact.min.js'"
   },
   "repository": {
     "type": "git",
