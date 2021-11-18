@@ -21,18 +21,23 @@ const testimonials = shuf([
     "Something something kill child before killing parent joke",
     "Made with Rust",
     "Reliable, Secure, Good performance, Easy to use UI/UX, High throughput",
-    "It doesn’t stalk me as much as the competitors!",
+    "It doesn't stalk me as much as the competitors!",
     "this software created synergy i didn't think was possible",
     "easy to use and it respects your privacy",
-    "this software's cloud backend has only been hacked twice this year"
+    "this software's cloud backend has only been hacked twice this year",
+    "please, they have my wife and kids; i want to see them again"
 ]);
 
 let i = 0;
+
 const update = () => {
-    i = i++ % testimonials.length;
+    i++;
+    i = i % testimonials.length;
     g("testimonials").innerText = testimonials[i];
-}
+};
+
 r(() => {
+    console.log("hi");
     update();
     setInterval(update, 3000);
 });
