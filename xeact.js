@@ -16,4 +16,6 @@ const c = (name) => document.getElementsByClassName(name);
 
 const u = (url = window.location.href, data = {}) => Object.assign(new URL(url), data);
 
+const s = (selector) => Array.from(document.querySelectorAll(selector));
+
 const q = (data = {}) => new URLSearchParams(data);

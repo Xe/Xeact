@@ -27,12 +27,8 @@ const testimonials = shuf([
     "this software's cloud backend has only been hacked twice this year"
 ]);
 
-(() => {
-    let i = 0;
-    const d = () => {
-        i++;
-        g("testimonials").innerText = testimonials[i % testimonials.length];
-    };
-    d();
-    setInterval(d, 3000);
-})();
+let i = 0;
+setInterval(() => {
+    i++;
+    g("testimonials").innerText = testimonials[i % testimonials.length];
+}, 3000);
