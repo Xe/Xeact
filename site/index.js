@@ -25,7 +25,8 @@ const testimonials = shuf([
     "this software created synergy i didn't think was possible",
     "easy to use and it respects your privacy",
     "this software's cloud backend has only been hacked twice this year",
-    "please, they have my wife and kids; i want to see them again"
+    "please, they have my wife and kids; i want to see them again",
+    "The third best femtoframework available on the market"
 ]);
 
 let i = 0;
