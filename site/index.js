@@ -29,7 +29,9 @@ r(() => {
         "easy to use and it respects your privacy",
         "this software's cloud backend has only been hacked twice this year",
         "please, they have my wife and kids; i want to see them again",
-        "The third best femtoframework available on the market"
+        "The third best femtoframework available on the market",
+        "simultaneously elegant and hideous",
+        "You will regret this"
     ]);
 
     let i = 0;
