@@ -1,6 +1,6 @@
 {
   "name": "@xeserv/xeact",
-  "version": "0.0.69",
+  "version": "0.69.0",
   "description": "Xeserv's groundbreaking JS femtoframework",
   "main": "xeact.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "xeserv"
   ],
   "author": "Xe",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "mit",
   "bugs": {
     "url": "https://github.com/Xe/Xeact/issues"
   },
