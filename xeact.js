@@ -5,6 +5,9 @@ const h = (name, data = {}, children = []) => {
     return result;
 };
 
+/** @type{function(string): HTMLElement} */
+const t = (text) => document.createTextNode(text);
+
 /** @type{function(HTMLElement)} */
 const x = (elem) => {
     while (elem.lastChild) {
@@ -34,4 +37,4 @@ const u = (url = "", params = {}) => {
 /** @type{function(function())} */
 const r = (callback) => window.addEventListener('DOMContentLoaded', callback);
 
-export { h, x, g, c, u, s, r };
+export { h, t, x, g, c, u, s, r };

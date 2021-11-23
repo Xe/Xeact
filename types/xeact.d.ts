@@ -1,5 +1,7 @@
 /** @type{function(string, Object, Array.<HTMLElement>)} */
 export const h: (arg0: string, arg1: any, arg2: Array<HTMLElement>) => any;
+/** @type{function(string): HTMLElement} */
+export const t: (arg0: string) => HTMLElement;
 /** @type{function(HTMLElement)} */
 export const x: (arg0: HTMLElement) => any;
 /** @type{function(string): HTMLElement} */
