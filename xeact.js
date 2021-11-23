@@ -1,14 +1,14 @@
-/** @type{function(string, Object, Array.<HTMLElement>)} */
+/** @type{function(string, Object=, Array.<Node|string>=)} */
 const h = (name, data = {}, children = []) => {
     let result = Object.assign(document.createElement(name), data);
     result.append(...children);
     return result;
 };
 
-/** @type{function(string): HTMLElement} */
+/** @type{function(string): Text} */
 const t = (text) => document.createTextNode(text);
 
-/** @type{function(HTMLElement)} */
+/** @type{function(Node)} */
 const x = (elem) => {
     while (elem.lastChild) {
         elem.removeChild(elem.lastChild);
@@ -18,13 +18,13 @@ const x = (elem) => {
 /** @type{function(string): HTMLElement} */
 const g = (name) => document.getElementById(name);
 
-/** @type{function(string): HTMLElement} */
+/** @type{function(string): HTMLCollectionOf.<Element>} */
 const c = (name) => document.getElementsByClassName(name);
 
 /** @type{function(string): Array.<HTMLElement>} */
 const s = (selector) => Array.from(document.querySelectorAll(selector));
 
-/** @type{function(string, Object): string} */
+/** @type{function(string=, Object=): string} */
 const u = (url = "", params = {}) => {
     let result = new URL(url, window.location.href);
     Object.entries(params).forEach((kv) => {
