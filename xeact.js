@@ -21,6 +21,9 @@ const g = (name) => document.getElementById(name);
 /** @type{function(string): HTMLCollectionOf.<Element>} */
 const c = (name) => document.getElementsByClassName(name);
 
+/** @type{function(string): HTMLCollectionOf.<Element>} */
+const n = (name) => document.getElementsByName(name);
+
 /** @type{function(string): Array.<HTMLElement>} */
 const s = (selector) => Array.from(document.querySelectorAll(selector));
 
@@ -37,4 +40,4 @@ const u = (url = "", params = {}) => {
 /** @type{function(function())} */
 const r = (callback) => window.addEventListener('DOMContentLoaded', callback);
 
-export { h, t, x, g, c, u, s, r };
+export { h, t, x, g, c, n, u, s, r };
