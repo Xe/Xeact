@@ -57,7 +57,7 @@ const c = (name) => document.getElementsByClassName(name);
 const s = (selector) => Array.from(document.querySelectorAll(selector));
 
 /**
- * Appends all key-value pairs from `params` onto `url` as URL-encoded parameters.
+ * Generate a relative URL from `url`, appending all key-value pairs from `params` as URL-encoded parameters.
  * 
  * @type{function(string=, Object=): string}
  */
