@@ -47,7 +47,10 @@ const g = (name) => document.getElementById(name);
  */
 const c = (name) => document.getElementsByClassName(name);
 
-/** 
+/** @type{function(string): HTMLCollectionOf.<Element>} */
+const n = (name) => document.getElementsByName(name);
+
+/**
  * Get all elements matching the given HTML selector.
  * 
  * Matches selectors with `document.querySelectorAll(selector)`
@@ -79,4 +82,4 @@ const u = (url = "", params = {}) => {
  */
 const r = (callback) => window.addEventListener('DOMContentLoaded', callback);
 
-export { h, t, x, g, c, u, s, r };
+export { h, t, x, g, c, n, u, s, r };
