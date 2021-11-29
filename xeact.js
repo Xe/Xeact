@@ -1,33 +1,69 @@
-/** @type{function(string, Object=, Array.<Node|string>=)} */
+/**
+ * Creates a DOM element, assigns the properties of `data` to it, and appends all `children`.
+ *  
+ * @type{function(string, Object=, Array.<Node|string>=)}
+ */
 const h = (name, data = {}, children = []) => {
     let result = Object.assign(document.createElement(name), data);
     result.append(...children);
     return result;
 };
 
-/** @type{function(string): Text} */
+/**
+ * Create a text node.
+ * 
+ * Equivalent to `document.createTextNode(text)`
+ * 
+ * @type{function(string): Text}
+ */
 const t = (text) => document.createTextNode(text);
 
-/** @type{function(Node)} */
+/**
+ * Remove all child nodes from a DOM element.
+ * 
+ * @type{function(Node)} 
+ */
 const x = (elem) => {
     while (elem.lastChild) {
         elem.removeChild(elem.lastChild);
     }
 };
 
-/** @type{function(string): HTMLElement} */
+/**
+ * Get all elements with the given ID.
+ * 
+ * Equivalent to `document.getElementById(name)`
+ * 
+ * @type{function(string): HTMLElement}
+ */
 const g = (name) => document.getElementById(name);
 
-/** @type{function(string): HTMLCollectionOf.<Element>} */
+/**
+ * Get all elements with the given class name.
+ * 
+ * Equivalent to `document.getElementsByClassName(name)`
+ * 
+ * @type{function(string): HTMLCollectionOf.<Element>} 
+ */
 const c = (name) => document.getElementsByClassName(name);
 
 /** @type{function(string): HTMLCollectionOf.<Element>} */
 const n = (name) => document.getElementsByName(name);
 
-/** @type{function(string): Array.<HTMLElement>} */
+/**
+ * Get all elements matching the given HTML selector.
+ * 
+ * Matches selectors with `document.querySelectorAll(selector)`
+ * 
+ * @type{function(string): Array.<HTMLElement>}
+ */
 const s = (selector) => Array.from(document.querySelectorAll(selector));
 
-/** @type{function(string=, Object=): string} */
+/**
+ * Generate a relative URL from `url`, appending all key-value pairs from `params` as URL-encoded parameters.
+ * 
+ * @type{function(string=, Object=): string}
+ */
 const u = (url = "", params = {}) => {
     let result = new URL(url, window.location.href);
     Object.entries(params).forEach((kv) => {
@@ -37,7 +73,13 @@ const u = (url = "", params = {}) => {
     return result.toString();
 };
 
-/** @type{function(function())} */
+/**
+ * Takes a callback to run when all DOM content is loaded.
+ * 
+ * Equivalent to `window.addEventListener('DOMContentLoaded', callback)`
+ * 
+ * @type{function(function())}
+ */
 const r = (callback) => window.addEventListener('DOMContentLoaded', callback);
 
 export { h, t, x, g, c, n, u, s, r };
