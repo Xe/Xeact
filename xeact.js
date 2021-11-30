@@ -1,7 +1,7 @@
 /**
  * Creates a DOM element, assigns the properties of `data` to it, and appends all `children`.
  *  
- * @type{function(string, Object=, Array.<Node|string>=)}
+ * @type{function(string, Object=, Node|Array.<Node|string>=)}
  */
 const h = (name, data = {}, children = []) => {
     let result = Object.assign(document.createElement(name), data);
