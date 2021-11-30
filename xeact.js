@@ -5,6 +5,9 @@
  */
 const h = (name, data = {}, children = []) => {
     let result = Object.assign(document.createElement(name), data);
+    if (!Array.isArray(children)) {
+        children = [children];
+    }
     result.append(...children);
     return result;
 };
