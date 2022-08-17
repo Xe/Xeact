@@ -1,10 +1,10 @@
 /**
  * Creates a DOM element, assigns the properties of `data` to it, and appends all `children`.
  *  
- * @type{function(string, Object=, Node|Array.<Node|string>=)}
+ * @type{function(string|Function, Object=, Node|Array.<Node|string>=)}
  */
 const h = (name, data = {}, children = []) => {
-    let result = Object.assign(document.createElement(name), data);
+    const result = typeof name == "function" ? name(data) : Object.assign(document.createElement(name), data);
     if (!Array.isArray(children)) {
         children = [children];
     }
