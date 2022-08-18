@@ -1,6 +1,6 @@
 {
   "name": "@xeserv/xeact",
-  "version": "0.69.70",
+  "version": "0.69.71",
   "description": "Xeserv's groundbreaking JS femtoframework",
   "main": "xeact.js",
   "scripts": {

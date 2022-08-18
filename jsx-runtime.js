@@ -12,3 +12,4 @@ export const jsx = (tag, data) => {
   result.classList.value = result.class;
   return result;
 };
+export const jsxs = jsx;
