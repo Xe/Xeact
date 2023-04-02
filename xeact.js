@@ -85,4 +85,17 @@ const u = (url = "", params = {}) => {
  */
 const r = (callback) => window.addEventListener('DOMContentLoaded', callback);
 
-export { h, t, x, g, c, n, u, s, r };
+/**
+ * Allows a stateful value to be tracked by consumers.
+ *
+ * This is the Xeact version of the React useState hook.
+ *
+ * @type{function(any): [function(): any, function(any): void]}
+ */
+const useState = (value = undefined) => {
+  return [() => value, (x) => {
+    value = x;
+  }];
+};
+
+export { h, t, x, g, c, n, u, s, r, useState };

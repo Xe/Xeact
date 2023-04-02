@@ -1,9 +1,9 @@
 /**
  * Creates a DOM element, assigns the properties of `data` to it, and appends all `children`.
  *
- * @type{function(string, Object=, Node|Array.<Node|string>=)}
+ * @type{function(string|Function, Object=, Node|Array.<Node|string>=)}
  */
-export const h: (arg0: string, arg1: any | undefined, arg2: (Node | Array<Node | string>) | undefined) => any;
+export const h: (arg0: string | Function, arg1: any | undefined, arg2: (Node | Array<Node | string>) | undefined) => any;
 /**
  * Create a text node.
  *
@@ -58,3 +58,11 @@ export const s: (arg0: string) => Array<HTMLElement>;
  * @type{function(function())}
  */
 export const r: (arg0: () => any) => any;
+/**
+ * Allows a stateful value to be tracked by consumers.
+ *
+ * This is the Xeact version of the React useState hook.
+ *
+ * @type{function(any): [function(): any, function(any): void]}
+ */
+export const useState: (arg0: any) => [() => any, (arg0: any) => void];

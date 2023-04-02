@@ -4,3 +4,4 @@
  * @type{function(string, Object=): HTMLElement}
  */
 export const jsx: (arg0: string, arg1: any | undefined) => HTMLElement;
+export function jsxs(arg0: string, arg1?: any | undefined): HTMLElement;
