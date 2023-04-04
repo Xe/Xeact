@@ -1,5 +1,13 @@
 # Xeact
 
+![enbyware](https://pride-badges.pony.workers.dev/static/v1?label=enbyware&labelColor=%23555&stripeWidth=8&stripeColors=FCF434%2CFFFFFF%2C9C59D1%2C2C2C2C)
+![NPM downloads](https://img.shields.io/npm/dw/@xeserv/xeact)
+![NPM version](https://img.shields.io/npm/v/@xeserv/xeact)
+![dependent repos](https://img.shields.io/librariesio/dependent-repos/npm/@xeserv/xeact)
+![license](https://img.shields.io/github/license/Xe/xeact)
+![language count](https://img.shields.io/github/languages/count/Xe/xeact)
+![repo size](https://img.shields.io/github/repo-size/Xe/xeact)
+
 Xeact is a high performance, developer-efficient and overall ballin'
 femtoframework for productive development in Javascript. It will take everything
 that is complicated about frontend web development and throw it in the trash.
