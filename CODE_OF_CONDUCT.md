@@ -8,7 +8,7 @@ If we make unwise choices because of our limitation,
 we cannot judge others for the same reason.
 
 So, we cannot judge,  
-thus we forgive. 
+thus we forgive.
 
 This project and its results are intended as:  
 a place of learning,  

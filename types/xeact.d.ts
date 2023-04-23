@@ -3,7 +3,11 @@
  *
  * @type{function(string|Function, Object=, Node|Array.<Node|string>=)}
  */
-export const h: (arg0: string | Function, arg1: any | undefined, arg2: (Node | Array<Node | string>) | undefined) => any;
+export const h: (
+  arg0: string | Function,
+  arg1: any | undefined,
+  arg2: (Node | Array<Node | string>) | undefined
+) => any;
 /**
  * Create a text node.
  *
