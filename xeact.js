@@ -102,4 +102,17 @@ const useState = (value = undefined) => {
   ];
 };
 
-export { h, t, x, g, c, n, u, s, r, useState };
+/**
+ * Debounce an action for up to ms milliseconds.
+ *
+ * @type{function(number): function(function(any): void)}
+ */
+const d = (ms) => {
+  let debounceTimer = null;
+  return (f) => {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(f, ms);
+  };
+};
+
+export { h, t, x, g, c, n, u, s, r, useState, d };

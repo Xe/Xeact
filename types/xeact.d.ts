@@ -3,11 +3,7 @@
  *
  * @type{function(string|Function, Object=, Node|Array.<Node|string>=)}
  */
-export const h: (
-  arg0: string | Function,
-  arg1: any | undefined,
-  arg2: (Node | Array<Node | string>) | undefined
-) => any;
+export const h: (arg0: string | Function, arg1: any | undefined, arg2: (Node | Array<Node | string>) | undefined) => any;
 /**
  * Create a text node.
  *
@@ -70,3 +66,9 @@ export const r: (arg0: () => any) => any;
  * @type{function(any): [function(): any, function(any): void]}
  */
 export const useState: (arg0: any) => [() => any, (arg0: any) => void];
+/**
+ * Debounce an action for up to ms milliseconds.
+ *
+ * @type{function(number): function(function(any): void)}
+ */
+export const d: (arg0: number) => (arg0: (arg0: any) => void) => any;
